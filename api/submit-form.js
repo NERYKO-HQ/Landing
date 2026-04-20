@@ -6,7 +6,7 @@
  * et les transmet à l'API HubSpot, évitant ainsi les problèmes CORS.
  */
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
     // Autoriser uniquement les requêtes POST
     if (req.method !== 'POST') {
         return res.status(405).json({ 
@@ -85,4 +85,4 @@ export default async function handler(req, res) {
             error: 'Erreur lors de l\'inscription' 
         });
     }
-}
+};
