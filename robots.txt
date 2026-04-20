@@ -1,0 +1,18 @@
+# Autoriser tous les robots (Google, Facebook, LinkedIn, Twitter, etc.)
+User-agent: *
+Allow: /
+
+# Autoriser spécifiquement Facebook
+User-agent: facebookexternalHit
+Allow: /
+
+# Autoriser LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# Autoriser Twitter
+User-agent: Twitterbot
+Allow: /
+
+# Sitemap (optionnel pour plus tard)
+# Sitemap: https://neryko.io/sitemap.xml
